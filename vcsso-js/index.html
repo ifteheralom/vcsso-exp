@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensure proper rendering on mobile and desktop browsers -->
+    <title>BBS Sign and Verify</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            min-width: 300px; /* Ensure a minimum width to prevent cramped appearance */
+        }
+        label {
+            margin-bottom: 10px;
+            display: block;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box; /* Include padding in the element's total width */
+            margin-bottom: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            display: block;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+        }
+        .result-heading {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .result-data {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            overflow-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h2>BBS Sign and Verify</h2>
+    <div class="result" id="messageResult">
+        <div class="result-heading">Message: </div>
+        <div class="result-data" id="messageData"></div>
+    </div>
+
+    <div class="result" id="signatureResult">
+        <div class="result-heading">Signature:</div>
+        <div class="result-data" id="signatureData"></div>
+    </div>
+
+    <div class="result" id="proofResult">
+        <div class="result-heading">Proof:</div>
+        <div class="result-data" id="proofData"></div>
+    </div>
+
+    <div class="result" id="buttons">
+        <button id="signButton">Sign Messages</button>
+        <button id="verifyButton">Verify Signature</button>
+    </div>
+</body>
+</html>

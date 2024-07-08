@@ -1,0 +1,17 @@
+{
+  "name": "VC SSO",
+  "version": "1.0.0",
+  "description": "Threshold SSO with VC",
+  "manifest_version": 3,
+  "author": "Ifteher Alom",
+  "permissions": [
+    "activeTab"
+  ],
+  "action":{
+    "default_popup": "index.html",
+    "default_title": "VC SSO Wallet"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
